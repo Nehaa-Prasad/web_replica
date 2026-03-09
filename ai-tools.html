@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RiteFlow Integrations</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- LOADER -->
+
+<div class="loader-screen" id="loader">
+
+<div class="spinner"></div>
+
+<h2>RiteFlow Loading...</h2>
+
+<p id="loading-percent">0%</p>
+
+</div>
+
+
+
+<!-- INTEGRATIONS PAGE -->
+
+<section class="integrations-page" id="toolsPage">
+
+<div class="tools-header">
+
+<span class="badge">Seamless Integrations</span>
+
+<h1>
+Connect RiteFlow <br>
+<span class="gradient-text">Seamlessly to Your Apps</span>
+</h1>
+
+<p>
+Plug our AI into the tools you already love—Slack, Zapier,
+Salesforce, Notion, and more. Sync data instantly and automate workflows.
+</p>
+
+</div>
+
+
+
+<div class="tools-container">
+
+<!-- FILTER -->
+
+<div class="tools-filter">
+
+<h3 class="filter-title">Filter by</h3>
+
+<ul class="filter-list">
+
+<li class="filter-item active" data-filter="all">All Integrations</li>
+
+<li class="filter-item" data-filter="productivity">Productivity</li>
+
+<li class="filter-item" data-filter="social">Social</li>
+
+<li class="filter-item" data-filter="content">Content</li>
+
+<li class="filter-item" data-filter="community">Community</li>
+
+</ul>
+
+</div>
+
+
+<!-- CARDS -->
+
+<div class="tools-grid">
+
+<!-- TaskPilot -->
+
+<div class="tool-card" data-category="productivity">
+<div class="tool-header">
+<div class="tool-icon">☀️</div>
+<h3>TaskPilot</h3>
+</div>
+
+<p>
+AI-driven project manager that syncs tasks, deadlines and team chat so
+RiteFlow automations update status and assign owners.
+</p>
+
+<div class="card-bottom">
+<span class="tag productivity">Productivity</span>
+<span class="arrow">↗</span>
+</div>
+</div>
+
+
+<!-- DataBridge -->
+
+<div class="tool-card" data-category="social">
+<div class="tool-header">
+<div class="tool-icon">⚡</div>
+<h3>DataBridge</h3>
+</div>
+
+<p>
+Low-code data pipeline tool that funnels spreadsheets, databases and APIs
+into RiteFlow models for automation.
+</p>
+
+<div class="card-bottom">
+<span class="tag social">Social</span>
+<span class="arrow">↗</span>
+</div>
+</div>
+
+
+<!-- TaskPilot Support -->
+
+<div class="tool-card" data-category="community">
+<div class="tool-header">
+<div class="tool-icon">💬</div>
+<h3>TaskPilot</h3>
+</div>
+
+<p>
+Omnichannel help-desk platform where RiteFlow bots draft replies and
+analyze customer sentiment.
+</p>
+
+<div class="card-bottom">
+<span class="tag community">Community</span>
+<span class="arrow">↗</span>
+</div>
+</div>
+
+
+<!-- LeadBoost CRM -->
+
+<div class="tool-card" data-category="content">
+<div class="tool-header">
+<div class="tool-icon">📊</div>
+<h3>LeadBoost CRM</h3>
+</div>
+
+<p>
+Sales pipeline tracker that pairs with RiteFlow to score leads and predict
+close probability.
+</p>
+
+<div class="card-bottom">
+<span class="tag content">Content</span>
+<span class="arrow">↗</span>
+</div>
+</div>
+
+
+<!-- VisualMaker -->
+
+<div class="tool-card" data-category="community">
+<div class="tool-header">
+<div class="tool-icon">🎨</div>
+<h3>VisualMaker</h3>
+</div>
+
+<p>
+Cloud design suite that feeds creatives into RiteFlow so marketing teams
+can instantly produce AI banners.
+</p>
+
+<div class="card-bottom">
+<span class="tag community">Community</span>
+<span class="arrow">↗</span>
+</div>
+</div>
+
+
+<!-- InsightPulse -->
+
+<div class="tool-card" data-category="social">
+<div class="tool-header">
+<div class="tool-icon">📈</div>
+<h3>InsightPulse BI</h3>
+</div>
+
+<p>
+Real-time business intelligence dashboard that streams KPIs into RiteFlow
+for automated forecasts.
+</p>
+
+<div class="card-bottom">
+<span class="tag social">Social</span>
+<span class="arrow">↗</span>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="cta-section">
+
+<div class="cta-container">
+
+<div class="cta-text">
+
+<h2>
+Start automating today.<br>
+<span>Let us handle the tasks.</span>
+</h2>
+
+<p>
+Unlock the power of AI with RiteFlow. Simplify your work, boost creativity,
+and stay ahead — start your smarter journey now.
+</p>
+
+<button class="cta-btn">Start for free</button>
+
+</div>
+
+<div class="cta-shape-container">
+<div class="cta-shape"></div>
+</div>
+
+</div>
+
+</section>
+
+<footer class="main-footer">
+
+<div class="footer-top">
+
+<div class="footer-left">
+
+<h2>Stay Updated</h2>
+
+<p>
+Subscribe to our newsletter for the latest updates, news, and insights.
+</p>
+
+<div class="newsletter-box">
+<input type="email" placeholder="example@example.com">
+<button onclick="joinNewsletter()">Join</button>
+</div>
+
+<div class="footer-social">
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-x-twitter"></i>
+<i class="fa-solid fa-envelope"></i>
+<i class="fa-brands fa-linkedin"></i>
+</div>
+
+</div>
+
+
+<div class="footer-links">
+
+<div>
+<h4>Company</h4>
+<a>About</a>
+<a>Contact</a>
+<a>Get a Demo</a>
+<a>Join Wishlist</a>
+</div>
+
+<div>
+<h4>Insight</h4>
+<a>Blog</a>
+<a>Features</a>
+<a>Integration</a>
+<a>Pricing</a>
+<a>Use Cases</a>
+</div>
+
+<div>
+<h4>Utility</h4>
+<a>Error</a>
+<a>Password Protected</a>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="footer-divider"></div>
+
+
+<div class="footer-bottom">
+
+<div class="copyright">
+© 2026 RiteFlow. Crafted by Shreethemes.
+</div>
+
+<div class="policy-links">
+<a>AI Policy</a>
+<span>•</span>
+<a>Security & Privacy</a>
+</div>
+
+</div>
+
+
+<div class="footer-brand">
+<h1>Rite<span>Flow</span></h1>
+</div>
+
+</footer>
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
