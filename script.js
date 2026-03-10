@@ -152,3 +152,38 @@ card.style.display = "none";
 });
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+
+const slider = document.getElementById("testimonialSlider");
+const cards = document.querySelectorAll(".testimonial-card");
+const nextBtn = document.getElementById("next");
+const prevBtn = document.getElementById("prev");
+
+let index = 0;
+const total = cards.length;
+
+function updateSlider() {
+    const cardWidth = cards[0].offsetWidth + 20;
+    slider.style.transform = `translateX(-${index * cardWidth}px)`;
+}
+
+// next
+nextBtn.addEventListener("click", () => {
+    index = (index + 1) % total;
+    updateSlider();
+});
+
+// previous
+prevBtn.addEventListener("click", () => {
+    index = (index - 1 + total) % total;
+    updateSlider();
+});
+
+// auto move
+setInterval(() => {
+    index = (index + 1) % total;
+    updateSlider();
+}, 4000);
+
+});

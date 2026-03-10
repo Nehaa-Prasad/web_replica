@@ -394,7 +394,7 @@ Discover how professionals in marketing, product, and operations boost results w
 
 </div>
 
-<div class="testimonial-grid">
+<div class="testimonial-grid" id="testimonialSlider">
  
 
 <div class="testimonial-card">
@@ -424,14 +424,30 @@ and better decisions.
 </p>
 </div>
 
+<div class="testimonial-card">
+<h4>Jenifer Lawrence</h4>
+<span>CEO & Engineer</span>
+<p>
+Riteflow transformed how we manage
+projects and automation.
+</p>
+</div>
 
+<div class="testimonial-card">
+<h4>Sophia Martinez</h4>
+<span>Product Manager</span>
+<p>
+Real-time analytics help us detect issues
+before they become problems.
+</p>
+</div>
 
 </div>
 
 <div class="testimonial-arrows">
 
-<button class="arrow-left">❮</button>
-<button class="arrow-right">❯</button>
+<button class="arrow-left" id="prev">❮</button>
+<button class="arrow-right" id="next">❯</button>
 
 </div>
 
@@ -668,7 +684,7 @@ Simple, transparent pricing with no hidden charges — only value.
 <span>Monthly</span>
 
 <label class="switch">
-<input type="checkbox">
+<input type="checkbox" id="billing-toggle">
 <span class="slider"></span>
 </label>
 
@@ -682,7 +698,7 @@ Simple, transparent pricing with no hidden charges — only value.
 <div class="price-card">
 
 <h3>Free</h3>
-<h1>$0</h1>
+<h1 id="price-free" data-month="0" data-year="0">$0</h1>
 
 <ul>
 <li>Up to 3 active projects</li>
@@ -701,7 +717,7 @@ Get Started Free
 <div class="price-card highlight">
 
 <h3>Pro</h3>
-<h1>$49</h1>
+<h1 id="price-pro" data-month="49" data-year="490">$49</h1>
 
 <ul>
 <li>Advanced AI automation</li>
@@ -720,7 +736,7 @@ Upgrade to Pro
 <div class="price-card">
 
 <h3>Enterprise</h3>
-<h1>$99</h1>
+<h1 id="price-enterprise" data-month="99" data-year="990">$99</h1>
 
 <ul>
 <li>Custom AI training</li>
@@ -760,9 +776,9 @@ Let us handle the tasks.
 Unlock the power of AI with RiteFlow. Simplify your work, boost creativity, and stay ahead — start your smarter journey now.
 </p>
 
-<button class="btn-primary">
+<a href="get-started.html" class="btn-primary">
 Start for free
-</button>
+</a>
 </div>
 <div class="cta-right">
 
@@ -909,7 +925,37 @@ fadeCards.forEach(card => {
 });
 </script>
 
-</body>
-</html>
+<script>
+
+const toggle = document.getElementById("billing-toggle");
+
+if(toggle){
+
+const free = document.getElementById("price-free");
+const pro = document.getElementById("price-pro");
+const enterprise = document.getElementById("price-enterprise");
+
+toggle.addEventListener("change", function(){
+
+if(toggle.checked){
+
+free.innerText = "$" + free.dataset.year;
+pro.innerText = "$" + pro.dataset.year;
+enterprise.innerText = "$" + enterprise.dataset.year;
+
+}else{
+
+free.innerText = "$" + free.dataset.month;
+pro.innerText = "$" + pro.dataset.month;
+enterprise.innerText = "$" + enterprise.dataset.month;
+
+}
+
+});
+
+}
+
+</script>
+<script src="script.js"></script>
 </body>
 </html>
