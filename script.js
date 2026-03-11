@@ -187,3 +187,28 @@ setInterval(() => {
 }, 4000);
 
 });
+
+/* process-section v1 */
+
+
+const stepsContainer = document.querySelector(".process-right");
+const steps = document.querySelectorAll(".step-card");
+
+stepsContainer.addEventListener("scroll", function() {
+
+  const trigger = stepsContainer.scrollTop + 150;
+
+  steps.forEach(function(step){
+
+    const offset = step.offsetTop;
+
+    if(offset < trigger){
+      step.classList.add("collapsed");
+    } else {
+      step.classList.remove("collapsed");
+    }
+
+  });
+
+});
+
