@@ -212,3 +212,32 @@ stepsContainer.addEventListener("scroll", function() {
 
 });
 
+const toggle = document.getElementById("priceToggle");
+
+toggle.addEventListener("change", function(){
+
+  const starter = document.getElementById("starterPrice");
+  const pro = document.getElementById("proPrice");
+  const enterprise = document.getElementById("enterprisePrice");
+
+  const duration = document.querySelectorAll(".price-duration");
+
+  if(toggle.checked){
+
+    starter.textContent = "$190";
+    pro.textContent = "$490";
+    enterprise.textContent = "$990";
+
+    duration.forEach(el => el.textContent = "/per user /year");
+
+  } else {
+
+    starter.textContent = "$19";
+    pro.textContent = "$49";
+    enterprise.textContent = "$99";
+
+    duration.forEach(el => el.textContent = "/per user /mo");
+
+  }
+
+});

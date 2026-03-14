@@ -356,50 +356,166 @@ and guide roadmaps with data-driven clarity.
 
 <section class="testimonials">
 
-  <div class="title">
+  <div class="testimonial-header">
     <span class="badge">Testimonial</span>
-    <h2>Trusted by professionals,<br>loved by every teams.</h2>
+
+    <h2>
+      Trusted by professionals,<br>
+      loved by every teams.
+    </h2>
+
     <p>
-      From startups to global enterprises, our users share how
-      Riteflow’s AI tools help them work smarter.
+      From startups to global enterprises, our users share how Riteflow’s AI tools help
+      them work smarter, faster, and more efficiently.
     </p>
   </div>
 
-  <div class="testimonial-grid">
+<div class="testimonial-wrapper">
+
+  <!-- COLUMN 1 -->
+  <div class="testimonial-column scroll-up">
 
     <div class="card">
       <h4>Sophia Martinez</h4>
       <span>Product Manager</span>
-      <p>Real-time analytics help us spot issues before they become problems.</p>
+      <p>Real-time analytics help us spot issues before they become problems. Riteflow keeps us proactive.</p>
     </div>
 
     <div class="card">
-      <h4>Olivia Green</h4>
-      <span>Project Manager</span>
-      <p>Finally, a platform that grows with our needs.</p>
+      <h4>Jennifer Lawrence</h4>
+      <span>CEO & Engineer</span>
+      <p>Riteflow has completely transformed the way we manage projects. The automation features save hours every week.</p>
     </div>
 
     <div class="card">
-      <h4>Grace Nguyen</h4>
-      <span>Customer Success Manager</span>
-      <p>Lead tracking is now effortless.</p>
+      <h4>David Thompson</h4>
+      <span>Marketing Director</span>
+      <p>Our marketing workflows are now faster and far more organized thanks to Riteflow’s integrations.</p>
+    </div>
+
+    <!-- duplicate for smooth scroll -->
+
+    <div class="card">
+      <h4>Sophia Martinez</h4>
+      <span>Product Manager</span>
+      <p>Real-time analytics help us spot issues before they become problems. Riteflow keeps us proactive.</p>
+    </div>
+
+    <div class="card">
+      <h4>Jennifer Lawrence</h4>
+      <span>CEO & Engineer</span>
+      <p>Riteflow has completely transformed the way we manage projects. The automation features save hours every week.</p>
     </div>
 
   </div>
 
+
+  <!-- COLUMN 2 -->
+  <div class="testimonial-column scroll-down">
+
+    <div class="card">
+      <h4>Olivia Green</h4>
+      <span>Project Manager</span>
+      <p>Finally, a platform that grows with our needs. We've scaled without losing control of our processes.</p>
+    </div>
+
+    <div class="card">
+      <h4>Emily Carter</h4>
+      <span>Creative Director</span>
+      <p>Integrations are seamless. Now all our design feedback and task tracking live in one place.</p>
+    </div>
+
+    <div class="card">
+      <h4>Daniel Kim</h4>
+      <span>CTO</span>
+      <p>The dashboards are clear and customizable. It's easy to present insights to leadership.</p>
+    </div>
+
+    <!-- duplicate -->
+
+    <div class="card">
+      <h4>Olivia Green</h4>
+      <span>Project Manager</span>
+      <p>Finally, a platform that grows with our needs. We've scaled without losing control of our processes.</p>
+    </div>
+
+    <div class="card">
+      <h4>Emily Carter</h4>
+      <span>Creative Director</span>
+      <p>Integrations are seamless. Now all our design feedback and task tracking live in one place.</p>
+    </div>
+
+  </div>
+
+
+  <!-- COLUMN 3 -->
+  <div class="testimonial-column scroll-up">
+
+    <div class="card">
+      <h4>Grace Nguyen</h4>
+      <span>Customer Success Manager</span>
+      <p>Lead tracking is now effortless. Our close rate has improved significantly since using Riteflow.</p>
+    </div>
+
+    <div class="card">
+      <h4>Chloe Davis</h4>
+      <span>HR Coordinator</span>
+      <p>Integrations are seamless. Now all our hiring workflows and approvals run smoothly.</p>
+    </div>
+
+    <div class="card">
+      <h4>Ryan Mitchell</h4>
+      <span>Data Analyst</span>
+      <p>The analytics dashboards are powerful and easy to understand. It helps our team make better decisions.</p>
+    </div>
+
+    <!-- duplicate -->
+
+    <div class="card">
+      <h4>Grace Nguyen</h4>
+      <span>Customer Success Manager</span>
+      <p>Lead tracking is now effortless. Our close rate has improved significantly since using Riteflow.</p>
+    </div>
+
+    <div class="card">
+      <h4>Chloe Davis</h4>
+      <span>HR Coordinator</span>
+      <p>Integrations are seamless. Now all our hiring workflows and approvals run smoothly.</p>
+    </div>
+
+  </div>
+
+</div>
 </section>
+
+</section>
+
 
 <section class="pricing">
 
   <span class="badge">Pricing Plans</span>
   <h2>Smart Pricing That Scales<br>With Your Growth</h2>
 
+  <!-- TOGGLE -->
+  <div class="pricing-toggle">
+    <span>Monthly</span>
+
+    <label class="switch">
+      <input type="checkbox" id="priceToggle">
+      <span class="slider"></span>
+    </label>
+
+    <span>Yearly</span>
+  </div>
+
+
   <div class="pricing-cards">
 
+    <!-- STARTER -->
     <div class="price-card">
       <h3>Starter</h3>
-      <h1>$19</h1>
-      <p>/per user /mo</p>
+      <h1 id="starterPrice">$19</h1>
+      <p class="price-duration">/per user /mo</p>
 
       <button class="btn-light">Start for free</button>
 
@@ -410,10 +526,12 @@ and guide roadmaps with data-driven clarity.
       </ul>
     </div>
 
+
+    <!-- PROFESSIONAL -->
     <div class="price-card highlight">
       <h3>Professional</h3>
-      <h1>$49</h1>
-      <p>/per user /mo</p>
+      <h1 id="proPrice">$49</h1>
+      <p class="price-duration">/per user /mo</p>
 
       <button class="btn">Start for free</button>
 
@@ -424,10 +542,12 @@ and guide roadmaps with data-driven clarity.
       </ul>
     </div>
 
+
+    <!-- ENTERPRISE -->
     <div class="price-card">
       <h3>Enterprise</h3>
-      <h1>$99</h1>
-      <p>/per user /mo</p>
+      <h1 id="enterprisePrice">$99</h1>
+      <p class="price-duration">/per user /mo</p>
 
       <button class="btn-light">Start for free</button>
 
@@ -439,6 +559,34 @@ and guide roadmaps with data-driven clarity.
     </div>
 
   </div>
+
+</section>
+
+<section class="cta-banner">
+
+<div class="container cta-box">
+
+  <div class="cta-left">
+    <h2>
+      Start automating today.<br>
+      Let us handle the tasks.
+    </h2>
+
+    <p>
+      Unlock the power of AI with RiteFlow. Simplify your work, boost creativity,
+      and stay ahead — start your smarter journey now.
+    </p>
+
+    <a href="get-started.html" class="btn-primary">
+      Start for free
+    </a>
+  </div>
+
+  <div class="cta-right">
+    <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" class="cta-image">
+  </div>
+
+</div>
 
 </section>
 
@@ -533,86 +681,6 @@ Demo sent successfully ✅
 </div>
 
 <script src="script.js"></script>
-
-<section class="testimonials">
-
-  <h2>Trusted by professionals</h2>
-<div class="testimonial-wrapper">
-
-  <!-- COLUMN 1 -->
-  <div class="testimonial-column scroll-up">
-    
-    <div class="card">
-      <h4>Sophia Martinez</h4>
-      <span>Product Manager</span>
-      <p>Real-time analytics help us spot issues before they become problems.</p>
-    </div>
-
-    <div class="card">
-      <h4>Jennifer Lawrence</h4>
-      <span>CEO & Engineer</span>
-      <p>Riteflow has completely transformed the way we manage projects.</p>
-    </div>
-
-    <div class="card">
-      <h4>David Thompson</h4>
-      <span>Marketing Director</span>
-      <p>Automation tools are fantastic and easy to use.</p>
-    </div>
-
-  </div>
-
-
-  <!-- COLUMN 2 -->
-  <div class="testimonial-column scroll-down">
-
-    <div class="card">
-      <h4>Olivia Green</h4>
-      <span>Project Manager</span>
-      <p>Finally, a platform that grows with our needs.</p>
-    </div>
-
-    <div class="card">
-      <h4>Emily Carter</h4>
-      <span>Creative Director</span>
-      <p>Integrations are seamless and powerful.</p>
-    </div>
-
-    <div class="card">
-      <h4>Daniel Kim</h4>
-      <span>CTO</span>
-      <p>The analytics dashboard gives great insights.</p>
-    </div>
-
-  </div>
-
-
-  <!-- COLUMN 3 -->
-  <div class="testimonial-column scroll-up">
-
-    <div class="card">
-      <h4>Grace Nguyen</h4>
-      <span>Customer Success Manager</span>
-      <p>Lead tracking is now effortless.</p>
-    </div>
-
-    <div class="card">
-      <h4>Chloe Davis</h4>
-      <span>HR Coordinator</span>
-      <p>Everything we need is in one place.</p>
-    </div>
-
-    <div class="card">
-      <h4>Ryan Mitchell</h4>
-      <span>Data Analyst</span>
-      <p>Our productivity improved dramatically.</p>
-    </div>
-
-  </div>
-
-</div>
-
-</section>
 
 </body>
 </html>
