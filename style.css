@@ -2485,7 +2485,7 @@ position:relative;
 /* remove dots */
 
 .dropdown-menu{
-  transition: 0.2s ease;
+transition: 0.2s ease;
 list-style:none;
 padding:8px 0;
 margin:0;
