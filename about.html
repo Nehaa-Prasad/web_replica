@@ -111,5 +111,228 @@ the future of intelligent, efficient, and human-centered work.
 </div>
 </div></div></section>
 
+<section class="ai-research">
+  <div class="container">
+
+    <!-- LEFT CONTENT -->
+    <div class="ai-left">
+      <h2>AI Research</h2>
+      <p>
+        At RiteFlow, our AI research drives innovation that transforms ideas into intelligent solutions.
+        We explore cutting-edge machine learning, automation, and data science to build tools that think,
+        learn, and adapt — empowering businesses and individuals to achieve more with the power of AI.
+      </p>
+    </div>
+
+    <!-- RIGHT CARDS -->
+    <div class="ai-right">
+
+      <div class="ai-card">
+        <div class="card-logo">LOGO</div>
+        <h4>Flow–Predict</h4>
+        <p>Predictive workflow analytics</p>
+        <span class="arrow">↗</span>
+      </div>
+
+      <div class="ai-card">
+        <div class="card-logo">∞</div>
+        <h4>Semantic-Link</h4>
+        <p>Unstructured data extraction</p>
+        <span class="arrow">↗</span>
+      </div>
+
+      <div class="ai-card">
+        <div class="card-logo">IPSUM</div>
+        <h4>Cognitive-Agent</h4>
+        <p>Adaptive AI learning</p>
+        <span class="arrow">↗</span>
+      </div>
+
+      <div class="ai-card">
+        <div class="card-logo">LOGO</div>
+        <h4>Ethical-AI-Audit</h4>
+        <p>Bias detection & mitigation</p>
+        <span class="arrow">↗</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-banner fade-section">
+
+<div class="container cta-box">
+<div class="cta-left">
+<h2>
+Start automating today.
+Let us handle the tasks.
+</h2>
+
+<p>
+Unlock the power of AI with RiteFlow. Simplify your work, boost creativity, and stay ahead — start your smarter journey now.
+</p>
+
+<a href="get-started.html" class="btn-primary">
+Start for free
+</a>
+</div>
+<div class="cta-right">
+
+<img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" class="cta-image">
+
+</div>
+</div>
+
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- FOOTER SECTION -->
+<!-- ================================================= -->
+
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+
+<h3>Stay Updated</h3>
+
+<p>
+Subscribe to our newsletter for the latest updates.
+</p>
+
+<input type="email" placeholder="example@example.com">
+<button>Join</button>
+
+</div>
+
+<div>
+<h4>Company</h4>
+<p>About</p>
+<p>Contact</p>
+<p>Get a Demo</p>
+</div>
+
+<div>
+<h4>Insight</h4>
+<p>Blog</p>
+<p>Features</p>
+<p>Pricing</p>
+<p>Use Cases</p>
+</div>
+
+<div>
+<h4>Utility</h4>
+<p>Error</p>
+<p>Password Protected</p>
+</div>
+
+</div>
+
+<p class="copyright">
+© 2026 RiteFlow Clone
+</p>
+
+</footer>
+<script>
+window.addEventListener("scroll", function() {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
+</script>
+<script>
+const sections = document.querySelectorAll(".fade-section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(section => {
+    const sectionTop = section.getBoundingClientRect().top;
+    if(sectionTop < window.innerHeight - 100){
+      section.classList.add("show");
+    }
+  });
+});
+</script>
+<script>
+const cards = document.querySelectorAll(".feature-card");
+
+cards.forEach(card => {
+  card.addEventListener("mousemove", (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = ((y - centerY) / 20);
+    const rotateY = ((centerX - x) / 20);
+
+    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "rotateX(0) rotateY(0)";
+  });
+});
+</script>
+<script>
+const integrationCards = document.querySelectorAll(".integration-card");
+
+integrationCards.forEach(card => {
+  card.addEventListener("mousemove", (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = ((y - centerY) / 18);
+    const rotateY = ((centerX - x) / 18);
+
+    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "rotateX(0) rotateY(0)";
+  });
+});
+</script>
+<script>
+const fadeCards = document.querySelectorAll(".fade-in");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+},{ threshold: 0.2 });
+
+fadeCards.forEach(card => {
+  observer.observe(card);
+});
+</script>
+<section class="brand-section">
+
+<div class="brand-container">
+
+<h1 class="brand-title">
+<span class="brand-white">Rite</span><span class="brand-blue">flow</span>
+</h1>
+
+</div>
+
+</section>
+<script src="script.js"></script>
+
 </body>
 </html>
