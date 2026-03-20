@@ -156,37 +156,41 @@ card.style.display = "none";
 document.addEventListener("DOMContentLoaded", () => {
 
 const slider = document.getElementById("testimonialSlider");
-const cards = document.querySelectorAll(".testimonial-card");
 const nextBtn = document.getElementById("next");
 const prevBtn = document.getElementById("prev");
 
+if(!slider || !nextBtn || !prevBtn) return;
+
 let index = 0;
-const total = cards.length;
+const cards = document.querySelectorAll(".testimonial-card");
 
 function updateSlider() {
-    const cardWidth = cards[0].offsetWidth + 20;
-    slider.style.transform = `translateX(-${index * cardWidth}px)`;
+  const cardWidth = cards[0].offsetWidth + 20;
+  slider.style.transform = `translateX(-${index * cardWidth}px)`;
 }
 
-// next
 nextBtn.addEventListener("click", () => {
-    index = (index + 1) % total;
-    updateSlider();
+  index++;
+  if(index >= cards.length) index = 0;
+  updateSlider();
 });
 
-// previous
 prevBtn.addEventListener("click", () => {
-    index = (index - 1 + total) % total;
-    updateSlider();
+  index--;
+  if(index < 0) index = cards.length - 1;
+  updateSlider();
 });
 
-// auto move
+});
+
 setInterval(() => {
-    index = (index + 1) % total;
-    updateSlider();
+  if(index < cards.length - 1){
+    index++;
+  } else {
+    index = 0;
+  }
+  updateSlider();
 }, 4000);
-
-});
 
 /* process-section v1 */
 
