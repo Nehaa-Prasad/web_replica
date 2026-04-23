@@ -4366,3 +4366,8 @@ body{
     font-size:80px;
   }
 }
+
+.feature-card {
+  cursor: pointer;
+}
+

@@ -246,3 +246,18 @@ toggle.addEventListener("change", function(){
 
 });
 
+// Make feature cards clickable but no action
+document.querySelectorAll('.feature-card').forEach(card => {
+  card.addEventListener('click', () => {
+    // intentionally empty (no action)
+    console.log("Card clicked");
+  });
+});
+
+function goToGetStarted() {
+  window.location.href = "get-started.html";
+}
+
+function stayHere() {
+  window.location.href = "features.html";
+}
